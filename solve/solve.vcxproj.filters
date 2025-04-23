@@ -26,5 +26,8 @@
     <ClInclude Include="MaxFlow.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="CompleteBinaryTree.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

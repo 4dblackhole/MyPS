@@ -129,6 +129,7 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CompleteBinaryTree.h" />
     <ClInclude Include="MaxFlow.h" />
     <ClInclude Include="utils.h" />
   </ItemGroup>
