@@ -155,24 +155,6 @@ int GetBitCount(const int& f)
 사이클이면 빼도 0이안돼서 출력이안됨
 */
 
-namespace UnionFind
-{
-	constexpr int Size = 10001;
-	int parent[Size];
-
-	int FindParent(int idx)
-	{
-		return (parent[idx] == idx) ? idx : parent[idx] = FindParent(parent[idx]);
-	}
-
-	void UnionParent(int a, int b)
-	{
-		a = FindParent(a);
-		b = FindParent(b);
-		parent[b] = a;
-	}
-}
-
 unordered_map<uint64, uint64> fibo;
 
 uint64 GetFivoMod(uint64 idx, uint64 mod)

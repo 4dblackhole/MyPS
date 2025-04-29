@@ -129,8 +129,12 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BitCount.h" />
     <ClInclude Include="CompleteBinaryTree.h" />
     <ClInclude Include="MaxFlow.h" />
+    <ClInclude Include="NextPermutation.h" />
+    <ClInclude Include="SegmentTreeMinMax.h" />
+    <ClInclude Include="UnionFind.h" />
     <ClInclude Include="utils.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

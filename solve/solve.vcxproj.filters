@@ -29,5 +29,17 @@
     <ClInclude Include="CompleteBinaryTree.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="UnionFind.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="BitCount.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="NextPermutation.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="SegmentTreeMinMax.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
