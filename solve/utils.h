@@ -29,6 +29,20 @@ static inline T CrossPt3(const pair<T, T> from, const pair<T, T> to1, const pair
 }
 
 template <typename T>
+static inline T GetLength(const pair<T, T> from, const pair<T, T> to)
+{
+	const T& x1 = from.first;
+	const T& y1 = from.second;
+
+	const T& x2 = to.first;
+	const T& y2 = to.second;
+
+	const T& x = x2 - x1;
+	const T& y = y2 - y1;
+	return sqrt(x * x + y * y);
+}
+
+template <typename T>
 static inline T CCW(const pair<T, T> from, const pair<T, T> to1, const pair<T, T> to2)
 {
 	if (CrossPt3(from, to1, to2) > 0)return 1;
@@ -208,19 +222,6 @@ Int IntSqrt(Int val)
 	return r;
 }
 
-static int Combination(int n, int m) // nCm
-{
-	if (m > n / 2) m = n - m;
-
-	int result = 1;
-	for (int i = n; i != m; --i)
-	{
-		result *= i;
-		result /= n - i + 1;
-	}
-	return result;
-}
-
 static void dfs(int maxnum, int currentDepth, int maxDepth, array<int, 8>& arr)
 {
 	if (currentDepth == maxDepth)
@@ -251,19 +252,6 @@ static void RC(int num, int maxnum, int size, std::vector<int> list)
 	{
 		RC(i, maxnum, size - 1, list);
 	}
-}
-
-static uint64 PowMod(uint64 val, uint64 pow, uint64 mod)
-{
-	uint64 result = 1u;
-	uint64 rate = val % mod;
-	while (pow)
-	{
-		if (pow & 0b1) result = (result * rate) % mod;
-		rate = (rate * rate) % mod;
-		pow >>= 1;
-	}
-	return result;
 }
 
 void InitOneCount(uint64* ptr, int len)

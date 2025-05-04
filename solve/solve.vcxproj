@@ -130,10 +130,16 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BitCount.h" />
+    <ClInclude Include="Combination.h" />
     <ClInclude Include="CompleteBinaryTree.h" />
+    <ClInclude Include="FastPow.h" />
+    <ClInclude Include="LCA.h" />
+    <ClInclude Include="LCDprint.h" />
     <ClInclude Include="MaxFlow.h" />
     <ClInclude Include="NextPermutation.h" />
+    <ClInclude Include="PrimeNumber.h" />
     <ClInclude Include="SegmentTreeMinMax.h" />
+    <ClInclude Include="SegmentTreeMultiply.h" />
     <ClInclude Include="UnionFind.h" />
     <ClInclude Include="utils.h" />
   </ItemGroup>
